@@ -1,0 +1,334 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav li{
+margin-left:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.logo{
+color:#38bdf8;
+}
+
+/* HOME */
+
+.home{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:100px 10%;
+}
+
+.home-text h1{
+font-size:45px;
+}
+
+.home-text span{
+color:#38bdf8;
+}
+
+.btn{
+background:#38bdf8;
+padding:12px 25px;
+border-radius:6px;
+color:black;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+}
+
+.home-img img{
+width:260px;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+/* EDUCATION */
+
+.edu-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.edu-card{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+width:230px;
+}
+
+/* CIRCLE PROGRESS */
+
+.circle{
+position:relative;
+width:120px;
+height:120px;
+margin:auto;
+}
+
+svg{
+width:120px;
+height:120px;
+transform:rotate(-90deg);
+}
+
+circle{
+fill:none;
+stroke:#334155;
+stroke-width:10;
+}
+
+.progress{
+stroke:#38bdf8;
+stroke-dasharray:314;
+stroke-dashoffset:314;
+}
+
+.number{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:18px;
+}
+
+/* SKILLS */
+/* SKILLS SECTION */
+
+.skills-wrapper{
+
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+justify-content:center;
+margin-top:40px;
+
+}
+
+/* CATEGORY BOX */
+
+.skill-category{
+
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+width:350px;
+transition:0.3s;
+
+}
+
+.skill-category:hover{
+
+transform:translateY(-6px);
+box-shadow:0 0 15px #38bdf8;
+
+}
+
+/* PROGRESS BAR */
+
+.skill-item{
+
+margin:15px 0;
+
+}
+img{
+max-width:100%;
+height:auto;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.progress-bar{
+
+background:#334155;
+height:8px;
+border-radius:5px;
+overflow:hidden;
+
+}
+
+.progress{
+
+height:100%;
+background:#38bdf8;
+animation:grow 2s;
+
+}
+
+@keyframes grow{
+
+from{width:0}
+
+}
+
+/* PERSONAL SKILLS */
+
+.skill-grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:20px;
+
+}
+
+.skill-card{
+
+background:#0f172a;
+padding:12px;
+border-radius:6px;
+text-align:center;
+transition:0.3s;
+
+}
+
+.skill-card:hover{
+
+background:#38bdf8;
+color:black;
+transform:scale(1.05);
+
+}
+
+/* PROJECTS */
+
+.project-container{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+width:250px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+box-shadow:0 0 15px #38bdf8;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+padding:20px;
+text-align:center;
+}
+/* TABLET */
+
+@media (max-width:900px){
+
+.home{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.home-img img{
+width:200px;
+}
+
+.edu-container{
+flex-direction:column;
+align-items:center;
+}
+
+.project-container{
+flex-direction:column;
+align-items:center;
+}
+
+.skills-wrapper{
+flex-direction:column;
+align-items:center;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+/* MOBILE */
+
+@media (max-width:600px){
+
+.home-text h1{
+font-size:32px;
+}
+
+section{
+padding:60px 5%;
+}
+
+nav ul{
+flex-direction:column;
+gap:10px;
+}
+
+.home-img img{
+width:170px;
+}
+
+.skill-category{
+width:100%;
+}
+
+.edu-card{
+width:90%;
+}
+
+.project{
+width:90%;
+}
+
+}
+
